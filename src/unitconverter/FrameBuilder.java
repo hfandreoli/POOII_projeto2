@@ -43,7 +43,7 @@ public class FrameBuilder {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		//Labels
+		// Labels
 		JLabel convertFromLabel = new JLabel("Convert from", SwingConstants.CENTER);
 		convertFromLabel.setBounds(20, 15, 150, 60);
 		frame.getContentPane().add(convertFromLabel);
@@ -56,18 +56,21 @@ public class FrameBuilder {
 		convertFromLabel.setBorder(border);
 		convertToLabel.setBorder(border);
 		
-		//Text fields
+		// Text fields
 		convertFromTextField = new JTextField();
 		convertFromTextField.setBounds(180, 15, 150, 60);
 		frame.getContentPane().add(convertFromTextField);
+		convertFromTextField.setHorizontalAlignment(SwingConstants.CENTER);
 		convertFromTextField.setColumns(10);
 		
 		convertToTextField = new JTextField();
 		convertToTextField.setBounds(180, 100, 150, 60);
 		frame.getContentPane().add(convertToTextField);
+		convertToTextField.setHorizontalAlignment(SwingConstants.CENTER);
+		convertToTextField.setEditable(false);
 		convertToTextField.setColumns(10);
 		
-		//ComboBoxes
+		// ComboBoxes
 		JComboBox<Object> convertFromComboBox = new JComboBox<Object>();
 		convertFromComboBox.setBounds(380, 15, 50, 25);
 		frame.getContentPane().add(convertFromComboBox);
